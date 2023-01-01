@@ -51,6 +51,7 @@ typedef CommandInteractions = {
 	function getMember(id:String):Dynamic;
 	function getBoolean(id:String):Bool;
 	function getNumber(id:String):Float;
+	function getSubcommand():String;
 	function getString(id:String):String;
 	function getUser(id:String):User;
 }

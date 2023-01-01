@@ -32,6 +32,9 @@ extern class SharedSlashCommandOptions extends SharedNameAndDescription {
 	@:overload(function(input:SlashCommandNumberOption):SlashCommandNumberOption {})
 	@:overload(function(input:(builder:SlashCommandNumberOption)->SlashCommandNumberOption):SlashCommandNumberOption {})
 	public function addNumberOption():SlashCommandBuilder;
+	@:overload(function(input:SlashCommandSubcommandBuilder):SlashCommandSubcommandBuilder {})
+	@:overload(function(input:(builder:SlashCommandSubcommandBuilder)->SlashCommandSubcommandBuilder):SlashCommandSubcommandBuilder {})
+	public function addSubcommand():SlashCommandBuilder;
 	
 }
 
@@ -63,5 +66,8 @@ abstract AnySlashCommand(SlashCommandBuilder) {
 	}
 	@:from static function fromMentionable(mentionable:SlashCommandMentionableOption) {
 		return new AnySlashCommand(cast mentionable);
+	}
+	@:from static function fromSubcommand(subcommand:SlashCommandSubcommandBuilder) {
+		return new AnySlashCommand(cast subcommand);
 	}
 }
