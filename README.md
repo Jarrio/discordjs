@@ -7,6 +7,3 @@ I have modified this API as I have needed to upgrade parts to align with discord
 Generated from **discord.js v12.5.3** by **[dts2hx](https://github.com/haxiomic/dts2hx) 0.15.3** using **TypeScript 3.7.4** with arguments:
 
 	dts2hx discord.js --noGlobal
-
-## Dependencies
-- @discordjs/collection
