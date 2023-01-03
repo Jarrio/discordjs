@@ -8,7 +8,7 @@ typedef MessageOptions = {
 	@:optional var nonce:String;
 	@:optional var content:String;
 	@:optional var embeds:Array<MessageEmbed>;
-	@:optional var allowedMentions:EitherType<Bool, Array<MessageMentionOptions>>;
+	@:optional var allowedMentions:EitherType<Bool, MessageMentionOptions>;
 	@:optional var files:Array<FileOptions>;
 	// Not added to the externs
 	// @:optional var components:Array<MessageActionR>;

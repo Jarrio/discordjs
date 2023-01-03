@@ -9,7 +9,7 @@ import discord_js.ThreadManager;
 	private function patch(data:Dynamic):Message;
 	public var activity : Null<MessageActivity>;
 	public var application : Null<ClientApplication>;
-	public var attachments : Collection<String, MessageAttachment>;
+	public var attachments : Array<MessageAttachment>;
 	public var author : User;
 	public var channel : ts.AnyOf3<TextChannel, NewsChannel, DMChannel>;
 	public final cleanContent : String;
