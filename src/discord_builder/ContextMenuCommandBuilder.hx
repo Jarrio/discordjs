@@ -4,7 +4,6 @@ import haxe.extern.EitherType;
 
 @:jsRequire('@discordjs/builders', 'ContextMenuCommandBuilder')
 extern class ContextMenuCommandBuilder {
-	public var name:String;
 	public var name_localizations:Array<String>;
 	public var type:ContextMenuCommandType;
 	public var dm_permission:Bool;
@@ -18,9 +17,9 @@ extern class ContextMenuCommandBuilder {
 	public function toJSON():String;
 }
 
-enum abstract ContextMenuCommandType(String) {
-	var USER;
-	var MESSAGE;
+enum abstract ContextMenuCommandType(Int) {
+	var USER = 2;
+	var MESSAGE = 3;
 }
 
 enum abstract Locale(String) {

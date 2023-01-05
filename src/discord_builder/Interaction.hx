@@ -31,6 +31,7 @@ extern class Interaction {
 	public function isCommand():Bool;
 	public function isContextMenu():Bool;
 	public function isMessageComponent():Bool;
-	public function isSelectMenu():Bool;
 	public function isModalSubmit():Bool;
+	public function isUserContextMenuCommand():Bool;
+	public function isMessageContextMenuCommand():Bool;
 }

@@ -70,4 +70,8 @@ abstract AnySlashCommand(SlashCommandBuilder) {
 	@:from static function fromSubcommand(subcommand:SlashCommandSubcommandBuilder) {
 		return new AnySlashCommand(cast subcommand);
 	}
+	
+	@:from static function fromContextMenu(menu:ContextMenuCommandBuilder) {
+		return new AnySlashCommand(cast menu);
+	}
 }

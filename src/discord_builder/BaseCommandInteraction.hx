@@ -27,7 +27,7 @@ extern class BaseCommandInteraction extends Interaction {
 	var options:CommandInteractions;
 	var fields:ModalSubmitFields;
 	var customId:String;
-	
+	var targetMessage:Message;
 	function deferReply(options:InteractionDeferReplyOptions):Promise<Message>;
 	function deleteReply():Promise<Void>;
 	@:overload(function(options:String):Promise<Message> {})
