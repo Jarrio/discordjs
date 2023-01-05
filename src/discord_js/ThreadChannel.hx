@@ -30,7 +30,7 @@ package discord_js;
 	function awaitMessages(filter:CollectorFilter, ?options:AwaitMessagesOptions):js.lib.Promise<Collection<String, Message>>;
 	function bulkDelete(messages:ts.AnyOf3<Float, Collection<String, Message>, haxe.ds.ReadOnlyArray<MessageResolvable>>, ?filterOld:Bool):js.lib.Promise<Collection<String, Message>>;
 	function createMessageCollector(filter:CollectorFilter, ?options:MessageCollectorOptions):MessageCollector;
-
+	public function send(options:MessageOptions):js.lib.Promise<Message>;
 	public function delete(?reason:String):js.lib.Promise<Channel>;
 	public function fetch(?force:Bool):js.lib.Promise<Channel>;
 	/**
