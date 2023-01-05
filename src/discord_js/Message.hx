@@ -1,5 +1,6 @@
 package discord_js;
 
+import js.lib.Map;
 import js.lib.Promise;
 import discord_js.ThreadManager;
 
@@ -9,7 +10,7 @@ import discord_js.ThreadManager;
 	private function patch(data:Dynamic):Message;
 	public var activity : Null<MessageActivity>;
 	public var application : Null<ClientApplication>;
-	public var attachments : Array<MessageAttachment>;
+	public var attachments : Map<String, MessageAttachment>;
 	public var author : User;
 	public var channel : ts.AnyOf3<TextChannel, NewsChannel, DMChannel>;
 	public final cleanContent : String;
