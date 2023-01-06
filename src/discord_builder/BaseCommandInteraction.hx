@@ -29,6 +29,7 @@ extern class BaseCommandInteraction extends Interaction {
 	var customId:String;
 	var targetMessage:Message;
 	function deferReply(options:InteractionDeferReplyOptions):Promise<Message>;
+	function deferUpdate(?options:InteractionDeferReplyOptions):Promise<Message>;
 	function deleteReply():Promise<Void>;
 	@:overload(function(options:String):Promise<Message> {})
 	@:overload(function(options:InteractionReplyOptions):Promise<Message> {})
@@ -59,6 +60,7 @@ typedef CommandInteractions = {
 typedef InteractionReplyOptions = {
 	@:optional var tts:Bool;
 	@:optional var ephemeral:Bool;
+	@:optional var fetchReply:Bool;
 	@:optional var nonce:String;
 	@:optional var content:String;
 	@:optional var components:Array<APIActionRowComponent<Dynamic>>;
