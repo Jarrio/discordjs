@@ -33,7 +33,7 @@ extern class MessageEmbed {
 	public var type : String;
 	public var url : Null<String>;
 	public final video : Null<MessageEmbedVideo>;
-	public function addFields(fields:haxe.extern.Rest<Field>):MessageEmbed;
+	public function addFields(fields:...Field):MessageEmbed;
 	public function attachFiles(file:Array<ts.AnyOf3<String, FileOptions, MessageAttachment>>):MessageEmbed;
 	public function setAuthor(options:EmbedAuthorData):MessageEmbed;
 	public function setColor(color:ColorResolvable):MessageEmbed;
@@ -66,10 +66,10 @@ class Field {
 	var name:String;
 	var value:String;
 	@:native('inline')
-	var in_line:Null<Bool>;
+	var _inline:Null<Bool>;
 	public function new(name:String, value:String, ?in_line:Bool) {
 		this.name = name;
 		this.value = value;
-		this.in_line = in_line;
+		this._inline = in_line;
 	}
 }
