@@ -16,10 +16,20 @@ typedef EmbedFooterData = {
 @:jsRequire('@discordjs/builders', 'EmbedBuilder')
 extern class MessageEmbed {
 	function new(?data:ts.AnyOf2<MessageEmbed, MessageEmbedOptions>);
+	public var data:Dynamic;
 	public var author : Null<MessageEmbedAuthor>;
 	public var color : Null<Float>;
 	public final createdAt : Null<js.lib.Date>;
-	public var description : Null<String>;
+	public var description(get, set) : Null<String>;
+	public inline function set_description(value:String):String {
+		var desc = this.data.description;
+		this.setDescription(desc + value);
+		return this.data.description;
+	}
+	public inline function get_description():String {
+		return this.data.description;
+	}
+
 	public var fields : Array<EmbedField>;
 	public var files : Array<ts.AnyOf3<String, FileOptions, MessageAttachment>>;
 	public var footer : Null<MessageEmbedFooter>;
