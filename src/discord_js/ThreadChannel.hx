@@ -21,6 +21,7 @@ package discord_js;
 	public var ownerId:String;
 	public var manageable:Bool;
 	public var memberCount:Int;
+	public var members:ThreadMemberManager;
 	//public var members:ThreadMemeb;
 	public var messageCount:Int;
 	public var messages:MessageManager;
