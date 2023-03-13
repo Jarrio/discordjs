@@ -39,7 +39,7 @@ extern class BaseCommandInteraction extends Interaction {
 
 	@:overload(function(options:String):Promise<Message> {})
 	@:overload(function(options:InteractionReplyOptions):Promise<Message> {})
-	function reply():Promise<Message>;
+	function reply(options:InteractionReplyOptions):Promise<Message>;
 	function respond(options:Array<ApplicationCommandOptionChoice>):Promise<Void>;
 	function showModal(modal:ModalBuilder):Promise<Void>;
 }
@@ -65,7 +65,7 @@ typedef InteractionReplyOptions = {
 	@:optional var content:String;
 	@:optional var components:Array<APIActionRowComponent<Dynamic>>;
 	@:optional var embeds:EitherType<Array<MessageEmbed>, Array<APIEmbed>>;
-	@:optional var allowedMentios:MessageMentionOptions;
+	@:optional var allowedMentions:MessageMentionOptions;
 	@:optional var files:Array<FileOptions>;
 	@:optional var attachments:Array<MessageAttachment>;
 }
