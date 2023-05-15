@@ -1,6 +1,6 @@
 package discord_api_types;
 
-@:enum extern abstract ConnectionVisibility(Int) from Int to Int {
+enum  abstract ConnectionVisibility(Int) from Int to Int {
 	/**
 		Invisible to everyone except the user themselves
 	**/

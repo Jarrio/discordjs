@@ -1,6 +1,6 @@
 package discord_api_types;
 
-@:enum extern abstract MembershipScreeningFieldType(String) from String to String {
+enum  abstract MembershipScreeningFieldType(String) from String to String {
 	/**
 		Server Rules
 	**/

@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/topics/gateway#activity-object-activity-types
 **/
-@:enum extern abstract ActivityType(Int) from Int to Int {
+enum  abstract ActivityType(Int) from Int to Int {
 	/**
 		Playing {game}
 	**/

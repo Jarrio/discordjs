@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/resources/guild#guild-object-guild-features
 **/
-@:enum extern abstract GuildFeature(String) from String to String {
+enum  abstract GuildFeature(String) from String to String {
 	/**
 		Guild has access to set an animated guild icon
 	**/

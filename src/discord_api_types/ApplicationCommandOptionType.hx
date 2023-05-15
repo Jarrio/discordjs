@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/interactions/slash-commands#application-command-object-application-command-option-type
 **/
-@:enum extern abstract ApplicationCommandOptionType(Int) from Int to Int {
+enum  abstract ApplicationCommandOptionType(Int) from Int to Int {
 	var Subcommand = 1;
 	var SubcommandGroup = 2;
 	var String = 3;

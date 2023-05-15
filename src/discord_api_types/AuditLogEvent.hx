@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/resources/audit-log#audit-log-entry-object-audit-log-events
 **/
-@:enum extern abstract AuditLogEvent(Int) from Int to Int {
+enum  abstract AuditLogEvent(Int) from Int to Int {
 	var GuildUpdate = 1;
 	var ChannelCreate = 10;
 	var ChannelUpdate = 11;

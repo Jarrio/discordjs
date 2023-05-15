@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/resources/guild#guild-object-system-channel-flags
 **/
-@:enum extern abstract GuildSystemChannelFlags(Int) from Int to Int {
+enum  abstract GuildSystemChannelFlags(Int) from Int to Int {
 	/**
 		Suppress member join notifications
 	**/

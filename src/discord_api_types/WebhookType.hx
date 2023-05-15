@@ -1,6 +1,6 @@
 package discord_api_types;
 
-@:enum extern abstract WebhookType(Int) from Int to Int {
+enum  abstract WebhookType(Int) from Int to Int {
 	/**
 		Incoming Webhooks can post messages to channels with a generated token
 	**/

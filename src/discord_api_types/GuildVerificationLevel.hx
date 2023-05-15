@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/resources/guild#guild-object-verification-level
 **/
-@:enum extern abstract GuildVerificationLevel(Int) from Int to Int {
+enum  abstract GuildVerificationLevel(Int) from Int to Int {
 	/**
 		Unrestricted
 	**/

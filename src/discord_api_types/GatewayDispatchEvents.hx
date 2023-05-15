@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/topics/gateway#commands-and-events-gateway-events
 **/
-@:enum extern abstract GatewayDispatchEvents(String) from String to String {
+enum  abstract GatewayDispatchEvents(String) from String to String {
 	var ApplicationCommandCreate = "APPLICATION_COMMAND_CREATE";
 	var ApplicationCommandDelete = "APPLICATION_COMMAND_DELETE";
 	var ApplicationCommandUpdate = "APPLICATION_COMMAND_UPDATE";

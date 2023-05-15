@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/topics/gateway#activity-object-activity-flags
 **/
-@:enum extern abstract ActivityFlags(Int) from Int to Int {
+enum  abstract ActivityFlags(Int) from Int to Int {
 	var Instance = 1;
 	var Join = 2;
 	var Spectate = 4;

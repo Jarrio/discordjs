@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	Types extracted from https://discord.com/developers/docs/topics/oauth2
 **/
-@:enum extern abstract OAuth2Scopes(String) from String to String {
+enum  abstract OAuth2Scopes(String) from String to String {
 	/**
 		For oauth2 bots, this puts the bot in the user's selected guild by default
 	**/

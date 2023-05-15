@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/interactions/message-components#component-types
 **/
-@:enum extern abstract ComponentType(Int) from Int to Int {
+enum  abstract ComponentType(Int) from Int to Int {
 	/**
 		Action Row component
 	**/

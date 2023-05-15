@@ -43,7 +43,7 @@ class ButtonBuilder extends APIButtonComponentBase {
 
 
 
-@:enum abstract ButtonStyle(Int) {
+enum abstract ButtonStyle(Int) {
 	//blurple
 	var Primary = 1;
 	//grey

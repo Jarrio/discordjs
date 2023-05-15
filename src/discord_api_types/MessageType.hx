@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/resources/channel#message-object-message-types
 **/
-@:enum extern abstract MessageType(Int) from Int to Int {
+enum  abstract MessageType(Int) from Int to Int {
 	var Default = 0;
 	var RecipientAdd = 1;
 	var RecipientRemove = 2;

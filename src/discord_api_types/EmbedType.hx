@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/resources/channel#embed-object-embed-types
 **/
-@:enum extern abstract EmbedType(String) from String to String {
+enum  abstract EmbedType(String) from String to String {
 	/**
 		Generic embed rendered from embed attributes
 	**/

@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/topics/opcodes-and-status-codes#json-json-error-codes
 **/
-@:enum extern abstract RESTJSONErrorCodes(Int) from Int to Int {
+enum  abstract RESTJSONErrorCodes(Int) from Int to Int {
 	var GeneralError = 0;
 	var UnknownAccount = 10001;
 	var UnknownApplication = 10002;

@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/resources/user#user-object-user-flags
 **/
-@:enum extern abstract UserFlags(Int) from Int to Int {
+enum  abstract UserFlags(Int) from Int to Int {
 	var None = 0;
 	var DiscordEmployee = 1;
 	var PartneredServerOwner = 2;

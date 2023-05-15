@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/resources/channel#channel-object-channel-types
 **/
-@:enum extern abstract ChannelType(Int) from Int to Int {
+enum  abstract ChannelType(Int) from Int to Int {
 	/**
 		A text channel within a guild
 	**/

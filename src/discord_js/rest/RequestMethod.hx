@@ -3,7 +3,7 @@ package discord_js.rest;
 /**
 	Possible API methods to be used when doing requests
 **/
-@:enum extern abstract RequestMethod(String) from String to String {
+enum  abstract RequestMethod(String) from String to String {
 	var Delete = "delete";
 	var Get = "get";
 	var Patch = "patch";

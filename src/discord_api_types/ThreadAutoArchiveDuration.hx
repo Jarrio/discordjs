@@ -1,6 +1,6 @@
 package discord_api_types;
 
-@:enum extern abstract ThreadAutoArchiveDuration(Int) from Int to Int {
+enum  abstract ThreadAutoArchiveDuration(Int) from Int to Int {
 	var OneHour = 60;
 	var OneDay = 1440;
 	var ThreeDays = 4320;

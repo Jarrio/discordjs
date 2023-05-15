@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/interactions/slash-commands#interaction-response-object-interaction-callback-type
 **/
-@:enum extern abstract InteractionResponseType(Int) from Int to Int {
+enum  abstract InteractionResponseType(Int) from Int to Int {
 	/**
 		ACK a `Ping`
 	**/

@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/topics/opcodes-and-status-codes#gateway-gateway-close-event-codes
 **/
-@:enum extern abstract GatewayCloseCodes(Int) from Int to Int {
+enum  abstract GatewayCloseCodes(Int) from Int to Int {
 	/**
 		We're not sure what went wrong. Try reconnecting?
 	**/

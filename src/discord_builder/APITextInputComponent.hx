@@ -49,7 +49,7 @@ class APITextInputComponent extends APIBaseComponent {
 	}
 }
 
-@:enum abstract TextInputStyle(Int) {
+enum abstract TextInputStyle(Int) {
 	var Short = 1;
 	var Paragraph = 2;
 }

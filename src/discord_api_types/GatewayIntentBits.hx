@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/topics/gateway#list-of-intents
 **/
-@:enum extern abstract GatewayIntentBits(Int) from Int to Int {
+enum  abstract GatewayIntentBits(Int) from Int to Int {
 	var Guilds = 1;
 	var GuildMembers = 2;
 	var GuildBans = 4;

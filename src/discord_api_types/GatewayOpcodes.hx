@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/topics/opcodes-and-status-codes#gateway-gateway-opcodes
 **/
-@:enum extern abstract GatewayOpcodes(Int) from Int to Int {
+enum  abstract GatewayOpcodes(Int) from Int to Int {
 	/**
 		An event was dispatched
 	**/

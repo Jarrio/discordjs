@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/resources/guild#get-guild-widget-image-widget-style-options
 **/
-@:enum extern abstract GuildWidgetStyle(String) from String to String {
+enum  abstract GuildWidgetStyle(String) from String to String {
 	/**
 		Shield style widget with Discord icon and guild members online count
 	**/

@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/resources/application#application-object-application-flags
 **/
-@:enum extern abstract ApplicationFlags(Int) from Int to Int {
+enum  abstract ApplicationFlags(Int) from Int to Int {
 	var ManagedEmoji = 4;
 	var GroupDMCreate = 16;
 	var RPCHasConnected = 2048;

@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/topics/opcodes-and-status-codes#rpc-rpc-error-codes
 **/
-@:enum extern abstract RPCErrorCodes(Int) from Int to Int {
+enum  abstract RPCErrorCodes(Int) from Int to Int {
 	var UnknownError = 1000;
 	var InvalidPayload = 4000;
 	var InvalidCommand = 4002;

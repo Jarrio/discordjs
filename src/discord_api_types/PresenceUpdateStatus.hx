@@ -1,6 +1,6 @@
 package discord_api_types;
 
-@:enum extern abstract PresenceUpdateStatus(String) from String to String {
+enum  abstract PresenceUpdateStatus(String) from String to String {
 	var Online = "online";
 	var DoNotDisturb = "dnd";
 	var Idle = "idle";

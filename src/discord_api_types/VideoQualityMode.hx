@@ -1,6 +1,6 @@
 package discord_api_types;
 
-@:enum extern abstract VideoQualityMode(Int) from Int to Int {
+enum  abstract VideoQualityMode(Int) from Int to Int {
 	/**
 		Discord chooses the quality for optimal performance
 	**/

@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/resources/channel#message-object-message-flags
 **/
-@:enum extern abstract MessageFlags(Int) from Int to Int {
+enum  abstract MessageFlags(Int) from Int to Int {
 	/**
 		This message has been published to subscribed channels (via Channel Following)
 	**/

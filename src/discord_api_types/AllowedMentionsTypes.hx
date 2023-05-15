@@ -3,7 +3,7 @@ package discord_api_types;
 /**
 	https://discord.com/developers/docs/resources/channel#allowed-mentions-object-allowed-mention-types
 **/
-@:enum extern abstract AllowedMentionsTypes(String) from String to String {
+enum  abstract AllowedMentionsTypes(String) from String to String {
 	/**
 		Controls @everyone and @here mentions
 	**/
