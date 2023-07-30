@@ -23,4 +23,5 @@ package discord_js;
 	public function setTopic(topic:Null<String>, ?reason:String):js.lib.Promise<VoiceChannel>;
 	public function updateOverwrite(userOrRole:ts.AnyOf5<String, User, GuildMember, Message, Role>, options:PermissionOverwriteOption, ?reason:String):js.lib.Promise<VoiceChannel>;
 	static var prototype : VoiceChannel;
+	public function fetch(?force:Bool):js.lib.Promise<VoiceChannel>;
 }

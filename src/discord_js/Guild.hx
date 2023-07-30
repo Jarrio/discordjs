@@ -55,6 +55,7 @@ package discord_js;
 	public final shard : WebSocketShard;
 	public var shardID : Float;
 	public var splash : Null<String>;
+	public var scheduledEvents:GuildScheduleEventManager;
 	public final systemChannel : Null<TextChannel>;
 	public final commands : GuildApplicationCommandManager;
 	public var systemChannelFlags : {

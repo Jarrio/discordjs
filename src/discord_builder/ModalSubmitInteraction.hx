@@ -1,5 +1,7 @@
 package discord_builder;
 
+import discord_builder.BaseCommandInteraction.InteractionReplyOptions;
+import discord_builder.BaseCommandInteraction.InteractionDeferReplyOptions;
 import discord_builder.APIActionRowComponent;
 import discord_builder.ActionRowBuilder;
 import discord_js.ApplicationCommand.ApplicationCommandOptionChoice;
@@ -16,16 +18,8 @@ import discord_api_types.InteractionType;
 import discord_api_types.Snowflake;
 
 @:native
-extern class BaseCommandInteraction extends BaseCommandInteraction {
-	var ephemeral:Bool;
-	var command:Dynamic;
-	var commandId:Snowflake;
-	var commandName:String;
-	var deferred:Bool;
-	var replied:Bool;
-	var type:InteractionType;
-	var options:CommandInteractions;
-	
+extern class ModalSubmitInteraction extends BaseCommandInteraction {
+
 	function deferReply(options:InteractionDeferReplyOptions):Promise<Message>;
 	function deleteReply():Promise<Void>;
 	@:overload(function(options:String):Promise<Message> {})
@@ -39,31 +33,4 @@ extern class BaseCommandInteraction extends BaseCommandInteraction {
 	function reply():Promise<Message>;
 	function respond(options:Array<ApplicationCommandOptionChoice>):Promise<Void>;
 	function showModal(modal:ModalBuilder):Promise<Void>;
-}
-
-typedef CommandInteractions = {
-	function getMentionable(id:String):Dynamic;
-	function getRole(id:String):Dynamic;
-	function getChannel(id:String):Dynamic;
-	function getMember(id:String):Dynamic;
-	function getBoolean(id:String):Bool;
-	function getNumber(id:String):Float;
-	function getString(id:String):String;
-	function getUser(id:String):User;
-}
-
-typedef InteractionReplyOptions = {
-	@:optional var tts:Bool;
-	@:optional var nonce:String;
-	@:optional var content:String;
-	@:optional var components:Array<APIActionRowComponent<Dynamic>>;
-	@:optional var embeds:EitherType<Array<MessageEmbed>, Array<APIEmbed>>;
-	@:optional var allowedMentios:MessageMentionOptions;
-	@:optional var files:Array<FileOptions>;
-	@:optional var attachments:Array<MessageAttachment>;
-}
-
-typedef InteractionDeferReplyOptions = {
-	@:optional var ephemeral:Bool;
-	@:optional var fetchReply:Bool;
 }

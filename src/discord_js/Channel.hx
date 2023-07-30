@@ -8,7 +8,6 @@ package discord_js;
 	public var id : String;
 	public var type : ChannelType;
 	public function delete(?reason:String):js.lib.Promise<Channel>;
-	public function fetch(?force:Bool):js.lib.Promise<Channel>;
 	public function isText():Bool;
 	/**
 		Returns a string representation of an object.
