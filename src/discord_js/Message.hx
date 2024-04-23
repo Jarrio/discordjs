@@ -1,5 +1,6 @@
 package discord_js;
 
+import ts.AnyOf4;
 import js.lib.Map;
 import js.lib.Promise;
 import discord_js.ThreadManager;
@@ -12,7 +13,7 @@ import discord_js.ThreadManager;
 	public var application : Null<ClientApplication>;
 	public var attachments : Map<String, MessageAttachment>;
 	public var author : User;
-	public var channel : ts.AnyOf3<TextChannel, NewsChannel, DMChannel>;
+	public var channel : AnyOf4<TextChannel, NewsChannel, DMChannel, ThreadChannel>;
 	public final cleanContent : String;
 	public var content : String;
 	public final createdAt : Date;
