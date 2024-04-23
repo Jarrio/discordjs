@@ -27,6 +27,7 @@ package discord_js;
 	public var messages:MessageManager;
 	public var name:String;
 	public var ownedId:String;
+	public var parentId:String;
 	
 	function awaitMessages(filter:CollectorFilter, ?options:AwaitMessagesOptions):js.lib.Promise<Collection<String, Message>>;
 	function bulkDelete(messages:ts.AnyOf3<Float, Collection<String, Message>, haxe.ds.ReadOnlyArray<MessageResolvable>>, ?filterOld:Bool):js.lib.Promise<Collection<String, Message>>;
