@@ -16,9 +16,19 @@ extern class GuildScheduledEvent extends Base {
 	public var scheduledEndTimestamp:Float;
 	public var userCount:Int;
 	public var status:GuildScheduledEventStatus;
+	public var entityMetadata:{
+		var location:String;
+	};
 	
+	public function isActive():GuildScheduledEventStatus;
+	public function isCanceled():GuildScheduledEventStatus;
+	public function isCompleted():GuildScheduledEventStatus;
+	public function isScheduled():GuildScheduledEventStatus;
 	public function createInviteURL(?options:GuildScheduledEventInviteURLCreateOptions):Promise<String>;
-	public function setStatus(status:GuildScheduledEventStatus, reason:String):Promise<GuildScheduledEvent>;
+	public function setStatus(status:GuildScheduledEventStatus, ?reason:String):Promise<GuildScheduledEvent>;
+	public function setDescription(description:String, ?reason:String):Promise<GuildScheduledEvent>;
+	public function setLocation(location:String, ?reason:String):Promise<GuildScheduledEvent>;
+	public function setName(name:String, ?reason:String):Promise<GuildScheduledEvent>;
 }
 
 enum abstract GuildScheduledEventStatus(Int) to Int {
