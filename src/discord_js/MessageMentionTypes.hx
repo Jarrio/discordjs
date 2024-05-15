@@ -1,3 +1,7 @@
 package discord_js;
 
-typedef MessageMentionTypes = String;
+enum abstract MessageMentionTypes(String) {
+	var roles;
+	var users;
+	var everyone;
+}
