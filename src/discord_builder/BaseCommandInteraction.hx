@@ -23,6 +23,7 @@ extern class BaseCommandInteraction extends Interaction {
 	var commandName:String;
 	var deferred:Bool;
 	var replied:Bool;
+	public var responded:Bool;
 	var type:InteractionType;
 	var options:CommandInteractions;
 	var fields:ModalSubmitFields;
