@@ -1,5 +1,6 @@
 package discord_builder.types;
 
+import discord_builder.APIActionRowComponent;
 import discord_js.FileOptions;
 import discord_api_types.APIEmbed;
 import discord_js.MessageEmbed;
@@ -12,4 +13,5 @@ typedef BaseMessageOptions = {
 	@:optional var content:String;
 	@:optional var embeds:Either<Array<MessageEmbed>,Array<APIEmbed>>;
 	@:optional var files:Array<FileOptions>;
+	@:optional var components:Array<APIActionRowComponent<Dynamic>>;
 }

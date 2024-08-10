@@ -15,12 +15,22 @@ import js.lib.Promise;
 import discord_api_types.InteractionType;
 import discord_api_types.Snowflake;
 
+enum abstract ComponentTypes(Int) {
+	var Button = 2;
+	var StringSelectMenu = 2;
+	var UserSelectMenu = 2;
+	var RoleSelectMenu = 2;
+	var MentionableSelectMenu = 2;
+	var ChannelSelectMenu = 2;
+}
+
 @:native
 extern class BaseCommandInteraction extends Interaction {
 	var ephemeral:Bool;
 	var command:Dynamic;
 	var commandId:Snowflake;
 	var commandName:String;
+	public var componentType:ComponentTypes;
 	var deferred:Bool;
 	var replied:Bool;
 	public var responded:Bool;
@@ -41,6 +51,7 @@ extern class BaseCommandInteraction extends Interaction {
 	@:overload(function(options:String):Promise<Message> {})
 	@:overload(function(options:InteractionReplyOptions):Promise<Message> {})
 	function reply(options:InteractionReplyOptions):Promise<Message>;
+	function update(options:InteractionReplyOptions):Promise<Message>;
 	function respond(options:Array<ApplicationCommandOptionChoice>):Promise<Void>;
 	function showModal(modal:ModalBuilder):Promise<Void>;
 }

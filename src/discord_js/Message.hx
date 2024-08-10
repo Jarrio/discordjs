@@ -1,5 +1,7 @@
 package discord_js;
 
+import discord_builder.BaseCommandInteraction;
+import discord_api_types.InteractionType;
 import ts.AnyOf4;
 import js.lib.Map;
 import js.lib.Promise;
@@ -512,6 +514,7 @@ import discord_js.ThreadManager;
 	};
 	public var reference : Null<MessageReference>;
 	public function awaitReactions(filter:CollectorFilter, ?options:AwaitReactionsOptions):js.lib.Promise<Collection<String, MessageReaction>>;
+	public function awaitMessageComponent(options:TAwaitMessageComponent):js.lib.Promise<Collection<String, Dynamic>>;
 	public function createReactionCollector(?options:ReactionCollectorOptions):ReactionCollector;
 	public function delete(?options:{ @:optional var timeout : Float; @:optional var reason : String; }):js.lib.Promise<Message>;
 	@:overload(function(content:Dynamic, options:ts.AnyOf2<MessageEmbed, MessageEditOptions>):js.lib.Promise<Message> { })
@@ -537,3 +540,9 @@ import discord_js.ThreadManager;
 	public function unpin(?options:{ @:optional var reason : String; }):js.lib.Promise<Message>;
 	static var prototype : Message;
 }
+
+typedef TAwaitMessageComponent = {
+	var filter:BaseCommandInteraction->Dynamic->Void;
+	@:optional var time:Int;
+}
+
