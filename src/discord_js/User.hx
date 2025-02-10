@@ -698,6 +698,7 @@ package discord_js;
 	public var system : Null<Bool>;
 	public final tag : String;
 	public var username : String;
+	public var displayName : String;
 	public function avatarURL(?options:ImageURLOptions & { @:optional @:native("dynamic") var dynamic_ : Bool; }):Null<String>;
 	public function createDM():js.lib.Promise<DMChannel>;
 	public function deleteDM():js.lib.Promise<DMChannel>;

@@ -1,5 +1,7 @@
 package discord_js;
 
+import discord_js.MessageAttachment;
+import ts.AnyOf2;
 import haxe.extern.EitherType;
 
 typedef MessageOptions = {
@@ -8,9 +10,11 @@ typedef MessageOptions = {
 	@:optional var fetchReply:Bool;
 	@:optional var nonce:String;
 	@:optional var content:String;
+	@:optional var username:String;
+	@:optional var avatarURL:String;
 	@:optional var embeds:Array<MessageEmbed>;
-	@:optional var allowedMentions:EitherType<Bool, MessageMentionOptions>;
-	@:optional var files:Array<FileOptions>;
+	@:optional var allowedMentions:MessageMentionOptions;
+	@:optional var files:Array<AnyOf2<FileOptions, MessageAttachment>>;
 	// Not added to the externs
 	// @:optional var components:Array<MessageActionR>;
 	@:optional var attachments:Array<MessageAttachment>;

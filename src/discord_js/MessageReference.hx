@@ -1,7 +1,7 @@
 package discord_js;
 
 typedef MessageReference = {
-	var channelID : String;
-	var guildID : String;
-	var messageID : Null<String>;
+	var channelId : String;
+	var guildId : String;
+	var messageId : Null<String>;
 };

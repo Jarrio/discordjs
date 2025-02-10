@@ -8,6 +8,7 @@ package discord_js;
 	public final joinable : Bool;
 	public final speakable : Bool;
 	public var userLimit : Float;
+	public var messages : MessageManager;
 	public function join():js.lib.Promise<VoiceConnection>;
 	public function leave():Void;
 	public function setBitrate(bitrate:Float, ?reason:String):js.lib.Promise<VoiceChannel>;

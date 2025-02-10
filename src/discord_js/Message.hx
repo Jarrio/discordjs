@@ -40,7 +40,7 @@ import discord_js.ThreadManager;
 	public var tts : Bool;
 	public var type : MessageType;
 	public final url : String;
-	public var webhookID : Null<String>;
+	public var webhookId : Null<String>;
 	public function startThread(?options:ThreadCreateOptions):Promise<ThreadChannel>;
 	public var flags : {
 		var bitfield : Float;
